@@ -1,0 +1,219 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #163172;
+    background-color: #f6f6f6;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #d6e4f0;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.links {
+    margin-left: 2rem;
+}
+
+nav a i {
+    font-size: 40px;
+    color: #1e56a0;
+}
+
+nav a i:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+
+}
+
+img {
+    width: 75px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-labels {
+    display: flex;
+}
+
+.color-labels > div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.color-labels span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.color-africa {
+    height: 15px;
+    width: 15px;
+    background-color: #9467bd;
+}
+.color-asia {
+    height: 15px;
+    width: 15px;
+    background-color: #ff7f0e;
+}
+.color-n-africa {
+    height: 15px;
+    width: 15px;
+    background-color: #8c564b;
+}
+.color-america {
+    height: 15px;
+    width: 15px;
+    background-color: #2ca02c;
+}
+.color-europe {
+    height: 15px;
+    width: 15px;
+    background-color: #d62728;
+}
+.color-pacific {
+    height: 15px;
+    width: 15px;
+    background-color: #1f77b4;
+}
+
+.year-label {
+    font-size: 150px;
+    font-weight: 400;
+    fill: #b6d3ec;
+}
+
+.slider {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#root {
+    display: flex;
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 12px;
+    width:  auto;
+    height: auto;
+    pointer-events: none;
+    background-color: rgb(225, 225, 225);
+    border: 0.5px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+.radio {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.radio label {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.15;
+    margin-bottom: 0px;
+}
+
+p {
+    max-width: 1000px;
+}
+
+.circles {
+    stroke: white;
+}
+
+.circles:hover {
+    stroke: rgb(88, 88, 88);
+}
+
+button {
+    width: 80px;
+    height: 25px;
+    margin: 20px;
+    font-size: 12px;
+    align-self: baseline;
+    color: inherit;
+
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid #163172;
+    transition: 0.4s;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    border-color: #b6d3ec;
+    color: #b6d3ec;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + i {
+    background: #b6d3ec;
+}
+
+label i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 2px solid #163172;
+    background-color: white;
+    transition: .25s;
+}
+
+label i:hover {
+    border-color: #b6d3ec;
+}
+
+/*#163172 dark blue
+#1e56a0 medium blue
+#b6d3ec light blue
+rgb(88, 88, 88, 0.7) grey
+*/

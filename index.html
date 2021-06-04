@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olympics Visualizer</title>
+    <link rel="icon" href="sport.png">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f91ab18c71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <img src="rings.png" alt="">
+                <div>
+                    <div class="links">
+                        <a href="https://github.com/hemantsaini-7" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/hemant-saini-2158a01a5/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <h1>OLYMPICS VISUALIZER</h1>
+        <h3>Success & Wealth of Nations</h3>
+        <p>This is a reimagination of a Gapminder visualization made famous by Hans Rosling to show the relationship
+            between income and Olympic success. It shows GDP per capita, PPP & inflation-adjusted in USD (x),
+            cumulative Summer Olympic medal count (y) and population (area of circle) of 194 nations over the last 123
+            years, colored by region.</p>
+        <div class="slider">
+            <button>Pause</button>
+            <input name="points" id="year-slider" type="range" min="1896" max="2019" value="1896" step="1"
+                style="width: 300px;">
+        </div>
+        <div class="color-labels">
+            <div>
+                <div class="color-africa"></div>
+                <span>Sub-Saharan Africa</span>
+            </div>
+            <div>
+                <div class="color-asia"></div>
+                <span>South Asia</span>
+            </div>
+            <div>
+                <div class="color-n-africa"></div>
+                <span>Middle East & North Africa</span>
+            </div>
+            <div>
+                <div class="color-america"></div>
+                <span>America</span>
+            </div>
+            <div>
+                <div class="color-europe"></div>
+                <span>Europe & Central Asia</span>
+            </div>
+            <div>
+                <div class="color-pacific"></div>
+                <span>East Asia & Pacific</span>
+            </div>
+        </div>
+        <div id='root'></div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="x-axis" id="GDP/capita" value="GDP-capita" checked>
+                <i></i>
+                GDP/capita
+            </label>
+            <label>
+                <input type="radio" name="x-axis" id="total-GDP" value="total-GDP">
+                <i></i>
+                Total GDP
+            </label>
+        </div>
+    </main>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="bubble.js"></script>
+</body>
+
+</html>
